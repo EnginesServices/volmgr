@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2020-05-28T17:04:09+10:00"
+    "timestamp": "2020-06-01T12:14:48+10:00"
   },
   "software": {
     "base": {
@@ -32,7 +32,8 @@
         "required": 32,
         "recommended": 32
       },
-      "run_as_user": "volmgr"
+      "run_as_user": "volmgr",
+      "create_user": "1"
     },
     "disposition": {
       "persistent": true,
