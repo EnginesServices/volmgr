@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2020-06-01T12:43:04+10:00"
+    "timestamp": "2020-06-01T12:57:35+10:00"
   },
   "software": {
     "base": {
@@ -51,7 +51,9 @@
     "included_files": [
       {
         "source": "injections/",
-        "destination": "/"
+        "destination": "/",
+        "owner": "root",
+        "group": "containers"
       }
     ],
     "constants": [
