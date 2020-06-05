@@ -1,10 +1,7 @@
 {
   "title": "volmgr",
   "description": "Volume Manager",
-  "memory_usage": {
-    "required": 32,
-    "recommended": 32
-  },
+  "memory_usage": 32,
   "licenses": [
   ],
   "binding_anchor": {
@@ -25,30 +22,6 @@
         "image": "engines/servicebase",
         "tag": "current"
       },
-      "state": {
-        "type_path": "filesystem/local/filesystem",
-        "service_handle_field": "service_name",
-        "deployment_type": "worker",
-        "set_state": "running",
-        "default_stop_timeout": 0,
-        "restart_policy": "unless-stopped",
-        "restart_attempts": 0,
-        "run_as_user": "volmgr",
-        "create_user": "1"
-      },
-      "disposition": [
-        "persistent",
-        "attach_post_build",
-        "attach_requires_restart",
-        "shareable",
-        "consumer_exportable"
-      ],
-      "constants": [
-        {
-          "name": "backup_support",
-          "value": "true"
-        }
-      ],
       "environment": {
         "variables": [
           {
@@ -58,6 +31,10 @@
           {
             "name": "service_name",
             "value": "volume_name"
+          },
+          {
+            "name": "backup_support",
+            "value": "true"
           }
         ]
       }
