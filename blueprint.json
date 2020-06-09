@@ -16,6 +16,10 @@
       "exclude_from_backup": "false"
     }
   },
+  "user": {
+    "name": "volmgr",
+    "create": true
+  },
   "stages": [
     {
       "starter": {
