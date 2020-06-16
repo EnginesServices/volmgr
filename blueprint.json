@@ -9,12 +9,17 @@
       "volume": "^^identifier^^",
       "path": "/home/fs/^^identifier^^",
       "permissions": "rw",
-      "user": "^^user.data_uid^^",
-      "group": "^^user.data_gid^^",
-      "fw_user": "^^user.identifier^^",
+      "user": "1111",
+      "group": "1111",
+      "container_user_identifier": "^^user.identifier^^",
       "access_level": "6666",
       "exclude_from_backup": "false"
     }
+  },
+  "user": {
+    "identifier": "22007",
+    "name": "volmgr",
+    "create": true
   },
   "stages": [
     {
